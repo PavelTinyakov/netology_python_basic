@@ -38,7 +38,7 @@ if __name__ == '__main__':
     symbol = input('Введите символ разделитель: ')
     try:
         print(symbol * int((square_perimeter + rectangle_perimeter)))
-    except ValueError:
+    except (ValueError, TypeError):
         print(symbol * 50)
 
     print()
