@@ -1,9 +1,9 @@
 boys = ['Peter', 'Alex', 'John', 'Arthur', 'Richard']
 girls = ['Kate', 'Liza', 'Kira', 'Emma', 'Trisha']
 
-boys.sort()
-girls.sort()
 if len(boys) == len(girls):
+    boys.sort()
+    girls.sort()
     print('Идеальные пары:')
     for boy, girl in zip(boys, girls):
         print(f'{boy} и {girl}')
