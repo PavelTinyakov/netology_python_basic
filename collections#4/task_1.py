@@ -17,5 +17,13 @@ result_1 = list(filter(lambda x: 'Россия' in tuple(x.values())[0], geo_log
 # Вариант решения 2
 result_2 = [el for el in geo_logs if 'Россия' in tuple(el.values())[0]]
 
+# Вариант решения 3
+for el in reversed(geo_logs):
+    for lst in el.values():
+        if 'Россия' not in lst:
+            geo_logs.remove(el)
+
+
 print(result_1)
 print(result_2)
+print(geo_logs)
