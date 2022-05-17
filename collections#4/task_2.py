@@ -14,6 +14,10 @@ for lst in ids.values():
         if val not in result_2:
             result_2.append(val)
 
+# Вариант решения 3
+result_3 = set(sum(ids.values(), []))
+
 
 print(list(result_1))
 print(result_2)
+print(list(result_3))
