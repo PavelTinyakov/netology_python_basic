@@ -30,4 +30,4 @@ def get_questions(days: int, tag: str) -> list:
 
 
 if __name__ == '__main__':
-    print(*get_questions(2, 'python'))
+    print(*get_questions(2, 'python'), sep='\n')
